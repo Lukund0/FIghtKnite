@@ -1,0 +1,57 @@
+<gameroot>:
+    frame: frame
+    react: react
+    FloatLayout:
+        orientation: 'horizontal'
+        Image:
+            source: 'Background.png'
+        Image:
+            id: frame
+            source: "punch/1.png"
+            x: 40
+        Image:
+            id: react
+            source: 'react/1.png'
+            x: 100
+        Button:
+            text: " >> "
+            font_size: 12
+            size_hint: 0.05,0.08
+            on_press: root.button_func('right')
+            pos_hint: {'x':0.13, 'top':0.25}
+        Button:
+            text: " << "
+            font_size: 12
+            size_hint: 0.05,0.08
+            on_press: root.button_func('left')
+            pos_hint: {'x':0.04, 'top':0.25}
+        Button:
+            text: " ^ "
+            font_size: 12
+            size_hint: 0.04,0.1
+            on_press: root.button_func('up')
+            pos_hint: {'x':0.0905, 'top':0.35}
+        Button:
+            text: " v "
+            font_size: 12
+            size_hint: 0.04,0.1
+            on_press: root.button_func('down')
+            pos_hint: {'x':0.0905, 'top':0.16}
+        Button:
+            text: " K "
+            font_size: 12
+            size_hint: 0.05,0.09
+            on_press: root.button_func('kick')
+            pos_hint: {'x':0.9, 'top':0.16}
+        Button:
+            text: " P "
+            font_size: 12
+            size_hint: 0.05,0.09
+            on_press: root.button_func('punch')
+            pos_hint: {'x':0.84, 'top':0.16}
+        Button:
+            text: " B "
+            font_size: 12
+            size_hint: 0.05,0.09
+            on_press: root.button_func('block')
+            pos_hint: {'x':0.87, 'top':0.28}
